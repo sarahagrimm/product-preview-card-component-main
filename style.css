@@ -25,29 +25,64 @@ img {
 
 .strikeout {
     text-decoration: line-through;
+    font-size: xx-small;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+
 }
 
 .btn {
     background-color: hsl(158, 36%, 37%);
-    max-height: 4rem;
-    max-width: 15rem;
+    color:hsl(0, 0%, 100%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: xx-small;
+    width: 12rem;
+    height: 3rem;
 
+}
+
+.btn:hover {
+    background-color: hsl(157, 29%, 20%);
+    color: hsl(0, 0%, 100%);
 }
 
 h1 {
     font-family: 'Fraunces', cursive;
     font-weight: 700;
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 .card-text {
     font-family: 'Montserrat', sans-serif;
     color: hsl(228, 12%, 48%);
     font-weight: 500;
+    font-size: 14px;
+    margin-top: 1rem;
 }
 
 .price {
     color: hsl(158, 36%, 37%);
     font-family: 'Fraunces', cursive;
     font-weight: 700;
+    font-size: x-large;
+}
+
+.small {
+    color: hsl(228, 12%, 48%);
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .3rem;
+    font-size: xx-small;
+    font-weight: 500;
+}
+
+.content {
+    margin: 1.5rem;
+}
+
+.cart {
+    overflow: visible;
+    padding: 0 7px;
 }
