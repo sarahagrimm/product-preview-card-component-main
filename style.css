@@ -15,12 +15,20 @@ body {
     flex-direction: row;
     background-color: hsl(0, 0%, 100%);
     border-radius: 1rem;
+    border: none;
 }
 
-img {
+.desktopImg {
     max-width: 15rem;
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
+    display: block;
+}
+
+.mobileImg{
+    display: none;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
 }
 
 .strikeout {
@@ -40,12 +48,18 @@ img {
     font-size: xx-small;
     width: 12rem;
     height: 3rem;
+    margin-top: 1rem;
 
 }
 
 .btn:hover {
     background-color: hsl(157, 29%, 20%);
     color: hsl(0, 0%, 100%);
+}
+
+.btn:active {
+    background-color: hsl(158, 36%, 37%);
+    color:hsl(0, 0%, 100%);
 }
 
 h1 {
@@ -85,4 +99,43 @@ h1 {
 .cart {
     overflow: visible;
     padding: 0 7px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (max-width: 700px) {
+    
+    .mobileImg {
+        display: block;
+        max-width: 16rem;
+    }
+
+    .desktopImg {
+        display: none;
+    }
+
+    .h1 {
+        font-size: xx-small;
+    }
+
+    .card {
+        max-width: 16rem;
+        flex-direction: column;
+    }
+
+    .card-img-top {
+        max-width: 16rem;
+    }
+
+    .btn {
+        max-height: 2rem;
+    }
+
 }
